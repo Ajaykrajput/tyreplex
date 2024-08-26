@@ -1,5 +1,164 @@
 import image1 from "../../public/assets/hemkunt.jpg";
 
+export const carTyres = [
+  {
+    id: 1,
+    key: "MRF Tyres",
+  },
+  {
+    id: 2,
+    key: "CEAT Tyres",
+  },
+  {
+    id: 3,
+    key: "GoodYear Tyres",
+  },
+  {
+    id: 4,
+    key: "Apollo Tyres",
+  },
+  {
+    id: 5,
+    key: "BridgeStone Tyres",
+  },
+  {
+    id: 6,
+    key: "JK Tyres",
+  },
+  {
+    id: 7,
+    key: "Michelin Tyres",
+  },
+  {
+    id: 8,
+    key: "All Car Tyres",
+  },
+];
+
+export const bikeTyres = [
+  {
+    id: 1,
+    key: "MRF Tyres",
+  },
+  {
+    id: 2,
+    key: "CEAT Tyres",
+  },
+  {
+    id: 3,
+    key: "GoodYear Tyres",
+  },
+  {
+    id: 4,
+    key: "Apollo Tyres",
+  },
+  {
+    id: 5,
+    key: "BridgeStone Tyres",
+  },
+  {
+    id: 6,
+    key: "JK Tyres",
+  },
+  {
+    id: 7,
+    key: "Michelin Tyres",
+  },
+  {
+    id: 8,
+    key: "All Bike Tyres",
+  },
+];
+
+export const tyrePressure = [
+  {
+    id: 1,
+    key: "All Tyre Pressure",
+  },
+];
+
+export const allComercialTyres = [
+  {
+    id: 1,
+    key: "All Comercial Tyres",
+  },
+];
+
+export const accessories = [
+  {
+    id: 1,
+    key: "Accessories",
+  },
+  {
+    id: 2,
+    key: "Battries",
+  },
+  {
+    id: 3,
+    key: "Alloyes Wheels",
+  },
+];
+
+export const moreOptions = [
+  {
+    id: 1,
+    key: "Cashback Offres",
+  },
+  {
+    id: 2,
+    key: "Find Tyres Dealers",
+  },
+  {
+    id: 3,
+    key: "Compare Tyres",
+  },
+  {
+    id: 4,
+    key: "Are you a Tyre Dealer",
+  },
+  {
+    id: 5,
+    key: "Wheel Balancing",
+  },
+  {
+    id: 6,
+    key: "Wheeel Alignment",
+  },
+];
+
+export const navTabs = [
+  {
+    id: 1,
+    name: "Car Tyres",
+    key: carTyres,
+  },
+  {
+    id: 2,
+    name: "Bike Tyres",
+    key: bikeTyres,
+  },
+  {
+    id: 3,
+    name: "Tyre Pressure",
+    key: tyrePressure,
+  },
+  {
+    id: 4,
+    name: "Commercial Tyres",
+    key: allComercialTyres,
+  },
+  {
+    id: 5,
+    name: "Accessories",
+    key: accessories,
+  },
+  {
+    id: 6,
+    name: "More",
+    key: moreOptions,
+  },
+];
+
 export const filterData = [
   {
     id: 1,

@@ -59,7 +59,7 @@ const Product = () => {
             }}
           >
             {brand.key}
-            <i class="bi bi-x-lg mx-2"></i>
+            <i className="bi bi-x-lg mx-2"></i>
           </div>
         </div>
       )}

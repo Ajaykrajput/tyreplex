@@ -2,13 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "../../public/assets/logo.webp";
-import { UserIcon } from "./Icon";
 import user from "../../public/assets/user.svg";
+import { navTabs } from "@/constants/constants";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-light shadow-sm" style={{backgroundColor: 'white'}}>
+      <nav
+        className="navbar navbar-expand-lg bg-body-light shadow-sm"
+        style={{ backgroundColor: "white" }}
+      >
         <div className="container">
           <Link href={"/"}>
             <Image
@@ -30,7 +33,7 @@ const Navbar = () => {
           </button>
           <div
             className="offcanvas offcanvas-end"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
@@ -52,67 +55,28 @@ const Navbar = () => {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li className="nav-item">
-                  <a className="nav-link fw-bold" aria-current="page" href="#">
-                    Car Tyres
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
-                    Bike Tyres
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
-                    Tyre Pressure
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
-                    Commercial Tyres
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
-                    Accessories
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
-                    More
-                  </a>
-                </li>
-                {/* <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li> */}
+                {navTabs.map((tabData) => (
+                  <li className="nav-item dropdown" key={tabData.id}>
+                    <a
+                      className="nav-link fw-bold link-offset-2 link-offset-3-hover link-underline-opacity-75-hover"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      {tabData.name}
+                    </a>
+                    <ul className="dropdown-menu">
+                      {tabData.key.map((op) => (
+                        <li key={op.key}>
+                          <a className="dropdown-item" href="#">
+                            {op.key}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
               </ul>
               <div className="d-flex flex-col justify-item-center px-2">
                 <span>

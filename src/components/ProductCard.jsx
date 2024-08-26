@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
               key={product.id}
               src={product.image}
               className="d-block w-100"
-              alt={product.name}
+              alt={product.brand}
               width={100}
               height={50}
             ></Image>
@@ -41,7 +41,7 @@ const ProductCard = ({ product }) => {
         <div className="col-6 d-flex align-items-end flex-column">
           <div className="d-flex justify-content-end rounded">
             <span
-              class=" d-flex px-1"
+              className=" d-flex px-1"
               style={{ backgroundColor: "#fff3cd", whiteSpace: "nowrap" }}
             >
               <i
