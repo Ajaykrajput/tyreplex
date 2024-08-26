@@ -31,7 +31,7 @@ const ServiceDealer = () => {
           <h5 className="card-title">Services offered by this dealer</h5>
           <div className="d-flex flex-row overflow-x-auto gap-3 scrollbar-hidden">
             {serviceImages.map((img) => (
-              <div className=" d-flex flex-col w-100 shadow-sm">
+              <div className=" d-flex flex-col w-100 shadow-sm" key={img.id}>
                 <div className="card p-3 my-2 w-100">
                   <Image
                     key={img.id}
@@ -41,9 +41,7 @@ const ServiceDealer = () => {
                     alt="hemkunt_image"
                   ></Image>
                   <div className="card-body justify-content-center text-center">
-                    <p className="card-text">
-                      Wheel Balancing
-                    </p>
+                    <p className="card-text">Wheel Balancing</p>
                     <a
                       href="#"
                       className="btn btn-danger px-2 fw-medium"

@@ -27,7 +27,7 @@ const Filter = ({
     } else {
       setSearchFilters(filterData);
     }
-  }, [searchValue]);
+  }, [searchValue, filterData]);
 
   const toggleAdvanceFilter = () => {
     setShowMoreFilter(!showMoreFilter);

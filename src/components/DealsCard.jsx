@@ -58,7 +58,7 @@ const DealsCard = () => {
           <h5 className="card-title">Deals In</h5>
           <div className="d-flex flex-row overflow-x-auto gap-3 scrollbar-hidden">
             {serviceImages.map((img) => (
-              <div className=" d-flex flex-col w-100 shadow-sm">
+              <div className=" d-flex flex-col w-100 shadow-sm" key={img.id}>
                 <div className="card p-3">
                   <Image
                     key={img.id}
