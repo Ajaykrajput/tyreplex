@@ -129,12 +129,12 @@ a {
   }
 }
 
-.nav-link {
+.navLink {
   text-decoration: none;
   position: relative;
 }
 
-.nav-link::after {
+.navLink::after {
   content: "";
   position: absolute;
   width: 0;
@@ -145,6 +145,6 @@ a {
   transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.navLink:hover::after {
   width: 100%;
 }

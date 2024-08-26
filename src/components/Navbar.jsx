@@ -58,7 +58,7 @@ const Navbar = () => {
                 {navTabs.map((tabData) => (
                   <li className="nav-item dropdown" key={tabData.id}>
                     <a
-                      className="nav-link fw-bold link-offset-2 link-offset-3-hover link-underline-opacity-75-hover"
+                      className="nav-link navLink fw-bold link-offset-2 link-offset-3-hover link-underline-opacity-75-hover"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
