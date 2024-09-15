@@ -134,7 +134,12 @@ const Filter = ({
           onClick={toggleAdvanceFilter}
           className="text-primary text-decoration-underline px-4 mt-2 cur"
         >
-          Advanced <i className="bi bi-chevron-down"></i>
+          Advanced{" "}
+          {showMoreFilter ? (
+            <i className="bi bi-chevron-up"></i>
+          ) : (
+            <i className="bi bi-chevron-down"></i>
+          )}
         </div>
       </div>
       {showMoreFilter && (
